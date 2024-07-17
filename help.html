@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Nexus University|HELP</title>
+    <link rel="stylesheet" href="help.css">
+    <link rel="icon" href="ass.png" type="image/x-icon">
+    <style>
+        .Wrapper {
+            max-width: 75%;
+            margin: auto;
+        }
+
+        .Wrapper > p,
+        .Wrapper > h1 {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .Wrapper > h1 {
+            letter-spacing: 3px;
+        }
+
+        .accordion {
+            background-color: white;
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            padding: 2rem 2.5rem;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .accordion i {
+            font-size: 1.6rem;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #f1f7f5;
+        }
+
+        .panel {
+            padding: 0 2rem 2.5rem 2rem;
+            background-color: white;
+            overflow: hidden;
+            background-color: #f1f7f5;
+            display: none;
+        }
+
+        .panel p {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .Faq {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+        }
+
+        .Faq.active {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">Celestial <span>Nexus</span></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="help.html">HELP</a></li>
+
+
+            </ul>
+
+        </div>
+    </header>
+    </nav>
+
+    <div class="Wrapper">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="Faq">
+            <button class="accordion">
+                What is krushi?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Krushi is a revolutionary concept in sustainable agriculture. It integrates advanced technology with traditional farming practices to maximize yield while minimizing environmental impact. By leveraging data analytics, IoT devices, and AI-driven insights, Krushi optimizes crop growth, resource allocation, and pest management. Farmers using Krushi experience higher productivity, reduced costs, and improved sustainability practices, making it a game-changer in the agricultural sector.
+                </p>
+            </div>
+        </div>
+    
+        <div class="Faq">
+            <button class="accordion">
+                How does it Work?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Krushi operates through a network of sensors deployed across fields, constantly collecting data on soil moisture, temperature, humidity, and crop health. This real-time data is transmitted to a central system that analyzes it using machine learning algorithms. Farmers access insights and recommendations through a user-friendly interface, guiding them on when to irrigate, fertilize, or apply pesticides optimally. By harnessing predictive analytics, Krushi predicts crop yield, identifies potential threats, and suggests proactive measures, empowering farmers to make informed decisions for sustainable agriculture.
+                </p>
+            </div>
+        </div>
+
+        <div class="Faq">
+            <button class="accordion">
+                Why did you Work?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Krushi was developed to address the challenges facing modern agriculture, including climate change, resource scarcity, and food security. Traditional farming methods often lead to inefficiencies and environmental degradation. By introducing Krushi, we aim to revolutionize agriculture by promoting sustainable practices and enhancing productivity. Our commitment to innovation drives us to continually refine Krushi's capabilities, ensuring it remains at the forefront of agricultural technology and contributes positively to global food production.
+                </p>
+            </div>
+        </div>
+
+        <div class="Faq">
+            <button class="accordion">
+                Have we done a great job?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    We believe we have made significant strides with Krushi, but our journey is ongoing. The positive feedback from farmers, increased crop yields, and reduced environmental impact are encouraging signs of success. However, we are committed to continuous improvement and innovation. By collaborating with agricultural experts and incorporating feedback from users, we strive to make Krushi even more effective and accessible. Our goal is not just to do a great job but to lead the way in sustainable agriculture and contribute to a resilient food system for future generations.
+                </p>
+            </div>
+        </div>
+    </div>
+ 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+<div class="footer">
+    <footer>  CNU &copy;2024 Group E  </footer>
+      </div>
+    
+
+</body>
+</html>
