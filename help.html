@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Nexus University|HELP</title>
+    <link rel="stylesheet" href="help.css">
+    <link rel="icon" href="ass.png" type="image/x-icon">
+    <style>
+        .Wrapper {
+            max-width: 75%;
+            margin: auto;
+        }
+
+        .Wrapper > p,
+        .Wrapper > h1 {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .Wrapper > h1 {
+            letter-spacing: 3px;
+        }
+
+        .accordion {
+            background-color: white;
+            color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 100%;
+            padding: 2rem 2.5rem;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .accordion i {
+            font-size: 1.6rem;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #f1f7f5;
+        }
+
+        .panel {
+            padding: 0 2rem 2.5rem 2rem;
+            background-color: white;
+            overflow: hidden;
+            background-color: #f1f7f5;
+            display: none;
+        }
+
+        .panel p {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .Faq {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+        }
+
+        .Faq.active {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="">Celestial <span>Nexus</span></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about us.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="COURSE.html">COURSE</a></li>
+                <li><a href="admission.html">ADMISSION</a></li>
+                <li><a href="help.html">HELP</a></li>
+
+
+            </ul>
+
+        </div>
+    </header>
+    </nav>
+
+    <div class="Wrapper">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="Faq">
+            <button class="accordion">
+                What is Celestial Nexus University ?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Celestial Nexus University (CNU) is a prestigious educational institution located in Somalia. Established to provide high-quality education and foster innovation, CNU offers a diverse range of undergraduate and postgraduate programs. The university is known for its strong emphasis on research, community engagement, and sustainability. It aims to cultivate leaders and professionals who can contribute to the development and progress of Somalia and the broader global community. CNU boasts state-of-the-art facilities, experienced faculty, and a vibrant student body, making it a hub for academic excellence and cultural exchange.
+                </p>
+            </div>
+        </div>
+    
+        <div class="Faq">
+            <button class="accordion">
+                How does it Work?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Celestial Nexus University operates through a structured academic and administrative framework designed to provide students with a comprehensive and enriching educational experience.
+                </p>
+            </div>
+        </div>
+
+        <div class="Faq">
+            <button class="accordion">
+                Why it is the best?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="panel">
+                <p>
+                    Celestial Nexus University (CNU) is considered the best university in Somalia due to:
+
+<br>1.Academic Excellence: High-quality education with experienced faculty. <br>
+<br>2.Innovative Research: State-of-the-art research centers and numerous research opportunities.<br>
+<br>3.Comprehensive Programs: Diverse and practical curricula across multiple disciplines.<br>
+<br>4.Modern Facilities: Advanced infrastructure and technological integration.<br>
+<br>5.Strong Support System: Extensive student support services and vibrant campus life.<br>
+<br>6.Global Perspective: International collaborations and a diverse student body.<br>
+<br>7.Social Impact: Active community engagement and successful alumni.<br>
+<br>8.Sustainability and Innovation: Commitment to eco-friendly practices and fostering innovation.
+                </p>
+            </div>
+        </div>
+
+       
+    </div>
+ 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+<div class="footer">
+    <footer style="padding-top: 10px;">  CNU &copy;2024 Group E  </footer>
+      </div>
+    
+
+</body>
+</html>
