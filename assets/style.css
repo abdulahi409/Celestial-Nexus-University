@@ -282,9 +282,8 @@ h2{
     }
 }
 .footer{
-    margin-top: 50px;
-    position:absolute; bottom:0; left: 0;
-    height: 50px; 
+    position:relative; bottom:0; left: 0;
+    height: 100px; 
     width: 100%; min-width: 40em;
     flex-shrink: 0;
     
@@ -292,6 +291,11 @@ h2{
     text-align: center;
     color: white;
   }
-
+.icons i{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+}  
 
 
