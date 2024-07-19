@@ -129,9 +129,15 @@ img{
 .footer{
     
     position:relative; bottom:0; left: 0;
-    height: 50px; 
+    height: 100px; 
     width: 100%; min-width: 40em;
     background-color: #3e2093;
     text-align: center;
     color: white;
   }
+.icons i{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+}  
